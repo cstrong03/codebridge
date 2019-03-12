@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stretch</title>
+	<style>
+		.navBar{
+  background-color:yellow;
+  height: 50px;
+  font-size: 16pt;
+  display: flex;
+  animation: intro 3s ease-in-out forwards; 
+}
+@keyframes intro{
+	0%{
+		width: 25vw;
+	}
+	100%{
+		width: 100vw;
+	}
+}
+.child{
+	flex: 1;
+}
+
+	</style>
+</head>
+<body>
+  
+  <nav class="navBar">
+    <a class="child" href="">Home</a>
+    <a class="child" href="">About</a>
+    <a class="child" href="">Gallery</a>
+    <a class="child" href="">Contact</a>
+    <a class="child" href="">Extra</a>
+  </nav>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+var c = 72;
+
+if(c > 100){
+  console.log(`yes`);
+  else if (c < 100) {
+    console.log(`meh`);
+  }
+  else{
+    console.log(`negative`);
+  }
+}

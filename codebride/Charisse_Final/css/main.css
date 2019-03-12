@@ -1,0 +1,479 @@
+/*********************************SPLASH***********************/
+body{
+	background-color: #000616;
+}
+#blooper{
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+}
+.text{
+	position: fixed;
+  	bottom: 0;
+ 	background: rgba(0, 0, 0, 0.75);
+ 	color: rgb(237, 255, 251);
+ 	width: 100%;
+ 	padding: 15px;
+ 	text-align: center;
+ 	font-size: 12pt;
+}
+.button{
+	font-size: 20pt;
+	height: 200px;
+	width: 200px;
+	text-decoration: none;
+	border: solid; 
+	border-radius: 25%;
+	color: rgb(237, 255, 251);
+}
+.button:hover{
+	background-color: #2374ab;
+}
+/*****************************Navigation************************/
+.navBar {
+  height: 60%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #a5d0a8;;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.navBar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #b7990d;
+  display: block;
+  transition: 0.3s;
+}
+
+.navBar a:hover {
+  background-color: #f2f4bc;
+}
+
+.navBar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+#extra {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.menu{
+	font-size: 45px;
+	color: #F2F4CB;
+	cursor: pointer;
+}
+/*************************HOME*******************************/
+.back{
+	height: 100vh;
+	width: 100vw;
+	background-image: url(../images/traveler.png);
+	background-size: cover;
+}
+.words{
+	padding-top: 10%; 
+	font-size: 125px;
+	color: #f2f4bc;
+	text-align: center; 
+	text-shadow: 4px;
+	animation: rainbow 3s ease-in-out infinite;
+}
+@keyframes rainbow{
+	0%{
+		color: #e6e8e6;
+	}
+	25%{
+		color: #ced0ce;
+	}
+	50%{
+		color: #9fb8ad;
+	}
+	75%{
+		color: #475841;
+	}
+	100%{
+		color: #3f403f;
+	}
+}
+.social{
+	display: flex;
+}
+.child{
+	flex: 1;
+}
+/***********************ABOUT************************/
+.para{
+	font-size: 35px;
+	text-align: center;
+	color: #f2f4bc;
+	margin: 50px;
+}
+p{
+	font-size:18pt;
+	font-family: 'Nanum Gothic', sans-serif; 
+	text-align:center;
+	color:gold;
+}
+h3{
+	color: gold;
+}
+.out{
+	background:url(../images/titan.jpg) fixed;
+	background-size: cover;
+}
+.in{
+	padding: 30vw;
+}
+.outer{
+	background: url(../images/warlock.jpg) fixed;
+	background-size: cover;
+}
+.inner{
+	padding: 30vw;
+}
+.sun{
+	background: url(../images/hunter.jpg) fixed;
+	background-size: cover;
+}
+.moon{
+	padding: 30vw;
+}
+.story{
+	font-size: 16pt;
+}
+/*******************************************CHARACTER***************************/
+.casts{
+	padding-top: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 20px;
+}
+.duck{
+	position: relative;
+	width: 50%;
+}
+.photo{
+	opacity: 1;
+  	display: block;
+  	transition: .5s ease;
+ 	backface-visibility: hidden;
+}
+.duck{
+	height: 370px;
+	width: 380px;
+	background: url('../images/zavala.png');
+}
+.info{
+	visibility: hidden;
+	height: 100%;
+	width: 100%;
+}
+.duck:hover .info{
+	background-color: rgba(0,0,0,0.5);
+	visibility: visible;
+}
+.cat{
+	height: 370px;
+	width: 380px;
+	background: url('../images/ikora.png');
+}
+.cat:hover .info{
+	background-color: rgba(0,0,0,0.5);
+	visibility: visible;
+}
+.dog{
+	height: 370px;
+	width: 380px;
+	background: url('../images/cayde6.png');
+}
+.dog:hover .info{
+	background-color: rgba(0,0,0,0.5);
+	visibility: visible;
+}
+.rabbit{
+	height: 340px;
+	width: 380px;
+	background: url('../images/shaxx.png');
+}
+.rabbit:hover .info{
+	background-color: rgba(0,0,0,0.5);
+	visibility: visible;
+}
+.hamster{
+	height: 370px;
+	width: 380px;
+	background: url('../images/rahool.png');
+}
+.hamster:hover .info{
+	background-color: rgba(0,0,0,0.5);
+	visibility: visible;
+}
+.snake{
+	height: 370px;
+	width: 380px;
+	background: url('../images/postmaster.png');
+}
+.snake:hover .info{
+	background-color: rgba(0,0,0,0.5);
+	visibility: visible;
+}
+#slideShow{
+	padding-top: 60px;
+	padding-left: 5%;
+}
+.foward, .backward{
+	position: relative;
+	color: yellow;
+	font-size: 20pt;
+}
+.foward:hover, .backward:hover{
+	background-color: blue;
+}
+.foward{
+	left: 82.5%;
+	bottom: 40%
+}
+.backward{
+	bottom: 20%;
+}
+/*********************************Arsenal*************************/
+.grand{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr; 
+}
+.pin{
+	height: 500px;
+	width: 700px;
+	border: solid;
+
+}
+.parent{
+	border: solid;
+	height: 500px;
+	width: 500px;
+	background-color: #246A73;
+}
+#flick{
+	height: 100%;
+	width: 100%;
+}
+#flick:hover{
+	transform: scale(1.1);
+}
+#name, #type, #year, #description, #status, #burn{
+	font-size: 16pt;
+	padding: 15px;
+	color: #d4d2a5;
+}
+.click{
+	padding: 40px;
+	font-size: 100px;
+}
+.press{
+	font-size: 20px;
+}
+.press:hover{
+	color: #db7f67;
+}
+
+/*******************RAIDS****************************************/
+#boss{
+	margin-top: 80px;
+	margin-left: 80px; 
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 40px; 
+}
+#btn{
+	height: 500px;
+	width: 500px;
+	cursor: pointer;
+}
+#btn:hover{
+	opacity: 0.6;
+}
+.bg-modal{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.6);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.modal-content{
+	width: 75%;
+	height: 500px;
+	background-color: #F3DFC1;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 20px;
+	position: relative;
+}
+#exit{
+	position: absolute;
+	top: 0;
+	right: 15px;
+	font-size: 40px;
+	cursor: pointer;
+}
+.message{
+	font-size: 12pt;
+	color: grey;
+}
+#new{
+	height: 500px;
+	width: 500px;
+	cursor: pointer;
+}
+#new:hover{
+	opacity: 0.6;
+}
+.syrup{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.stress{
+	width: 900px;
+	height: 400px;
+	background-color: #f2f4cb;
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+#gone{
+	position: absolute;
+	top: 0px;
+	color:purple;
+	font-size: 30px;
+	cursor: pointer;
+}
+.sugar{
+	font-size: 12pt;
+	color: grey;
+}
+#cotton{
+	height: 500px;
+	width: 500px; 
+	cursor: pointer;
+}
+#cotton:hover{
+	opacity: 0.6;
+}
+.candy{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top:350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.sweet{
+	width: 900px;
+	height: 400px;
+	background-color: #f3dfc1;
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+#escape{
+	position: absolute;
+	font-size: 40px;
+	color: magenta;
+	cursor: pointer;
+}
+.gold{
+	font-size: 12pt;
+	color: grey;
+}
+#coco{
+	height: 500px;
+	width: 500px;
+	cursor: pointer;
+}
+#coco:hover{
+	opacity: 0.6;
+}
+.mango{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.cherry{
+	width: 900px;
+	height: 425px;
+	background-color: #f2f4cb;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 20px;
+	position:relative; 
+}
+#poof{
+	position: absolute;
+	font-size: 40px;
+	top: 0;
+	color: magenta;
+	cursor: pointer;
+}
+.rainbow{
+	font-size: 12pt;
+	color: grey;
+}
+/************************************************CONTACT/CREDITS***************************************/
+.heading{
+	color: #87a878;
+	margin-left: 550px;
+}
+.container{
+	height: 500px;
+	width: 800px;
+	background-color: #f8f4e3;
+	margin-top: 100px;
+	margin-left: 250px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;  
+  border: solid ; 
+  border-radius: 4px;
+  box-sizing: border-box; /* Make sure that padding and width stays in place and doesnt run off the page */
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+#subject{
+	height: 200px;
+}

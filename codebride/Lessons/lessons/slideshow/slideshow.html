@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style></style>
+</head>
+<body>
+
+	<img class="mySlides" src="pic1.jpeg">
+	<img class="mySlides" src="pic2.jpeg">
+	<img class="mySlides" src="pic3.jpeg">
+	<img class="mySlides" src="pic4.jpeg">
+	<img class="mySlides" src="pic5.jpeg">
+
+	<button onclick="plusDivs(-1)">Back</button>
+	<button onclick="plusDivs(1)">Next</button>
+
+
+<script>
+	var slideIndex = 0;
+
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+
+        var x = document.getElementsByClassName("mySlides");
+
+        if(n > x.length){
+            slideIndex = 0;
+        }
+        if (n < 0) {
+            slideIndex = x.length;
+        }
+        for(i = 0; i < x.length; i++){
+            x[i].style.display = "none";
+        }
+        x[slideIndex].style.display = "block";
+    }
+</script>
+</body>
+</html>

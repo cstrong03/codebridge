@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<p id="display"></p>
+	<button onclick="doTheThing">click</button>
+
+
+<script>
+	let nycBoroughs = ['Bronx', 'Manhattan', 'Queens', 'Brooklyn'];
+	let nycBoroughsReverse = [];
+
+	function doTheThing() {
+		let p = document.getElementById('display');
+
+		
+		for(let i = nycBoroughs.length-1; i >= 0 i--){
+
+			nycBoroughsReverse.push(nycBoroughs.pop());
+			
+			p.innerHTML += nycBoroughsReverse[i];
+		}
+	}
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+<input type="text" id="A">
+
+<input type="text" id="B">
+
+<button onclick="sum()">Sum</button>
+
+
+<script type="text/javascript">
+    
+let a;
+let b;
+
+
+
+function setValues(){
+a = Number(document.getElementById('A').value);
+
+b =Number(document.getElementById('B').value);
+
+}
+function sum(){
+
+    
+setValues();
+let result = a + b;
+window.alert(result);
+
+}
+
+</script>
+</body>
+</html>

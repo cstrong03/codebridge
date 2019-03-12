@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+	<div id="navBar" class="navBar">
+  <a  class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="character.html">Character</a>
+		<a href="arsenal.html">Arsenal</a>
+		<a href="raids.html">Raids</a>
+		<a href="credits.html">Credits</a>
+</div>
+  <span class="menu" onclick="openNav()">&#9776;</span>
+
+  <div id="extra">
+  	<div class="grand">
+  	<div class="parent">
+  		<h1 id="name"></h1>
+  		<h2 id="type"></h2>
+  		<h3 id="year"></h3>
+  		<p id="description"></p>
+  		<p id="status"></p>
+  		<p id="burn"></p>
+  	</div>
+
+
+<div class="pin">
+	<img id="flick" src="../images/striker.jpg">
+</div>
+
+  		
+
+	</div>
+
+
+	<div class="click">
+  		<!-- Here let the button equal to the index number and all the info -->
+  		<button class="press" onclick="weapon[0].getInfo()">Greatest Ever</button>
+  		<button class="press" onclick="weapon[1].getInfo()">OverPowered</button>
+  		<button class="press" onclick="weapon[2].getInfo()">Refund Ammo</button>
+  		<button class="press" onclick="weapon[3].getInfo()">Don't get to Close</button>
+  		<button class="press" onclick="weapon[4].getInfo()">Majestic</button>
+  		<button class="press" onclick="weapon[5].getInfo()">ZzZzZzZzZZ</button>
+  		</div>
+
+
+</div>
+
+<script src="../javascript/script.js" ></script>
+</body>
+</html>

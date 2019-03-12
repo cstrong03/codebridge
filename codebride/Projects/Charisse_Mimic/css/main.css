@@ -1,0 +1,80 @@
+body{
+	background-color: #00e7dc;
+	font-family: sans-serif;
+	font-weight: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:"yellow orange red"
+	"green blue purple"
+}
+
+.yellow{
+	grid-area: yellow;
+	height: 400px;
+	color: white;
+	background-color: #ffc41a;
+	text-align: center;
+}
+.home{
+	color: white;
+	font-size: 12pt;
+	margin-top:30px;
+}
+
+h1{
+	font-size: 21pt;
+	color: white;
+	justify-content: center;
+}
+.orange{
+	grid-area: orange;
+	height: 400px;
+	color: white; 
+	background-color: #ff7b0f;
+}
+#army{
+	height: 200px;
+	width: 200px;
+	vertical-align: center;
+}
+.red{
+	grid-area: red;
+	height: 400px;
+	color: white;
+	background-color: #ea4335;
+}
+#prism{
+	height: 200px;
+	width: 200px;
+}
+.green{
+	grid-area: green;
+	height: 400px;
+	color:white;
+	background-color: #75bd3f;
+}
+#pen{
+	height: 200px;
+	width: 200px;
+}
+.blue{
+	grid-area: blue;
+	height: 400px;
+	color: white;
+	background-color: #0092ff;
+}
+#pop{
+	height: 150px;
+	width: 150px;
+}
+.purple{
+	grid-area: purple;
+	height: 400px;
+	color: white;
+	background-color: #7d4297;
+}
+#yo{
+	height: 200px;
+	width: 200px;
+}

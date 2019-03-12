@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+	padding: 0; 
+}
+.behind{
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../images/rain.png);
+}
+.umbrella{
+	background-image: url(../images/umbrella.png);
+	position: absolute;
+	margin-top: 20%;
+	margin-left: -40%;  
+	height: 500px;
+	width: 500px;
+}
+button{
+	height: 50px;
+	width: 50px;
+	border-radius: 25%;
+	color:blue;
+	background-color: teal;
+	position: absolute;
+}

@@ -1,0 +1,19 @@
+
+body{
+	font-family: 'Indie Flower', cursive;
+	margin-top: 150px;
+	text-align: center;
+	color: white;
+}
+#time{
+	font-size: 100px;
+	font-weight: bold;
+	text-shadow: 4px 4px;
+}
+#alarmTime {
+	color: White;
+	position: absolute;
+}
+#alarmButton{
+	background-color: white;
+}

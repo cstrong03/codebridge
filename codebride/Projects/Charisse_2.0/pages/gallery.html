@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+	<nav class="navBar">
+		<a class="child" href="../index.html">Home</a>
+		<a class="child" href="about.html">About</a>
+		<a class="child" href="gallery.html">Gallery</a>
+	</nav>
+
+	<div id="show">
+		<img class="mySlides" src="../images/slide1.jpg">
+		<img class="mySlides" src="../images/slide2.jpg">
+		<img class="mySlides" src="../images/slide3.jpg">
+		<img class="mySlides" src="../images/slide4.jpg">
+		<img class="mySlides" src="../images/pic5.jpg">
+	</div>
+
+	<button onclick="plusDivs(-1)">Back</button>
+	<button onclick="plusDivs(1)">Foward</button>
+
+<div class="cheesecake">
+	<a class="button" href="#modal">Click me Please!</a>
+</div>
+
+<div id="modal" class="bg">
+	<div class="inner">
+		<a class="close" href="#">&times;</a>
+		<div class="info">
+			<img src="../images/modal.jpeg">
+			<p>Thanks for Playing!</p>
+		</div>
+	</div>
+</div>
+
+<script src="../javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#myContainer{
+			height: 400px;
+			width: 400px;
+			position: relative;
+			background-color: purple;
+		}
+		#myAnimation{
+			height: 50px;
+			width: 50px;
+			position: absolute;
+			background-color: gold
+		}
+	</style>
+</head>
+<body>
+
+	<button onclick="move()">Move Me</button>
+	<div id="myContainer">
+		<div id="myAnimation"></div>
+	</div>
+
+
+
+<script>
+
+	// let move = () => {
+	// 	let elem = document.getElementById('myAnimation');
+	// 	let pos = 0;
+
+	// let frame = () => {
+	// 	if (pos == 350) {
+	// 		clearInterval(id);
+	// 		pos = 0;
+	// 	}
+	// 	else{
+	// 		pos++;
+	// 		elem.style.top = pos + 'px';
+	// 		elem.style.left = pos + 'px';
+	// 	}
+
+	// };
+	// 	let id = setInterval(frame , 10);
+
+
+	// };
+s
+	function move() {
+		var elem = document.getElementById('myAnimation');
+		var pos = 0;
+		var id = setInterval(frame , 5);
+		function frame(){
+			if (pos == 350) {
+				clearInterval(id);
+				pos = 0;
+				id = setInterval(kitty , 5);
+			}
+			else{
+				pos++;
+				elem.style.left = pos + 'px';
+			}
+		}
+		function kitty(){
+			if (pos == 350){
+				clearInterval(id);
+				id = setInterval(lion , 5);
+			}
+			else{
+				pos++;
+				elem.style.top = pos + 'px';
+			}
+		}
+		function lion(){
+			if (pos == 0) {
+				clearInterval(id);
+				pos = 350;
+				id = setInterval(tiger , 5);
+			}
+			else{
+				pos--;
+				elem.style.left = pos + 'px';
+			}
+		}
+		function tiger(){
+			if (pos == 0) {
+				clearInterval(id);
+			}
+			else{
+				pos--;
+				elem.style.top = pos + 'px';
+			}
+		}
+	}
+
+</script>
+</body>
+</html>

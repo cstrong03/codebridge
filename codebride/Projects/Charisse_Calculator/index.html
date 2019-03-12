@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Based Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+	<script></script>
+</head>
+<body>
+<form name="math" id="calc">
+	<div class="input">
+		<input type="text" name="input">
+	</div>
+	<div class="set1">
+		<button type="button" name="clear" value="" onclick="math.input.value = '   '">C</button>
+		<button type="button" name="back" value="back" onclick="math.input.value = math.input.value - math.input.value"><</button>
+		<button type="button" name="divide" value="/" onclick="math.input.value += '/'">&#247;</button>
+		<button <button type="button" name="mutliply" value="*" onclick="math.input.value += '*'">&times;</button>
+	</div>
+	<div class="set2">
+		<button type="button" name="7" value="7" onclick="math.input.value += '7'">7</button>
+		<button type="button" name="8" value="8" onclick="math.input.value += '8'">8</button>
+		<button type="button" name="9" value="9" onclick="math.input.value += '9'">9</button>
+		<button type="button" name="subtract" value="-" onclick="math.input.value += '-'">-</button>
+	</div>
+	<div class="set3">
+		<button type="button" name="4" value="4" onclick="math.input.value += '4'">4</button>
+		<button type="button" name="5" value="5" onclick="math.input.value += '5'">5</button>
+		<button type="button" name="6" value="6" onclick="math.input.value += '6'">6</button>
+		<button type="button" name="add" value="+" onclick="math.input.value += '+'">+</button>
+	</div>
+	<div class="set4">
+		<button type="button" name="1" value="1" onclick="math.input.value += '1'">1</button>
+		<button type="button" name="2" value="2" onclick="math.input.value += '2'">2</button>
+		<button type="button" name="3" value="3" onclick="math.input.value += '3'">3</button>
+		<button <button type="button" name="equal" value="=" onclick="math.input.value = eval(math.input.value)">=</button>
+	</div>
+	<div class="last">
+		<button type="button" name="0" value="0" onclick="math.input.value += '0'">0</button>
+		<button type="button" name"decimal" value="." onclick="math.input.value += '.'">.</button>
+		<button type="button" name="avg" value="Avg" onclick="math.input.value = average()">Avg</button>
+	</div>
+</form>
+
+<script src="javascript/script.js"></script>
+</body>
+</html>

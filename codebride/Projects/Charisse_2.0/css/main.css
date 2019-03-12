@@ -1,0 +1,149 @@
+body{
+	background-color: #77727a;
+}
+a{
+	text-decoration:none;
+	color: green; 
+}
+a:hover{
+	background-color: gold;
+}
+.navBar{
+  background-color:#64019c;
+  color: green;
+  text-decoration: none;
+  height: 50px;
+  font-size: 16pt;
+  text-align: center;
+  display: flex;
+  animation: intro 3s ease-in-out forwards; 
+}
+@keyframes intro{
+	0%{
+		width: 25vw;
+	}
+	100%{
+		width: 100vw;
+	}
+}
+.child{
+	flex: 1;
+}
+.title{
+	font-size: 20pt;
+	font-family: 'Rokkitt', serif;
+	color: #8e03dd;
+	text-align: center;
+}
+.begin{
+	height: 600px;
+	width: 100vw;
+}
+.info{
+	font-family: 'Rokkitt', serif;
+	text-shadow: 5px;
+	font-size: 16pt;
+	padding-top: 20px;
+}
+.footer{
+	display: flex;
+	list-style: none;
+	padding: 10px;
+}
+/*######################### about page ###########################*/
+h1{
+	font-size: 20pt;
+	text-align: center;
+	color: blue;
+	padding-top: 20px;
+	margin: 100px;
+	text-shadow: 3px;
+	animation: words 5s ease-in-out infinite;
+}
+@keyframes words{
+	0%{
+		color: #5f0592;
+	}
+	50%{
+		color: #b6c10a;
+	}
+	100%{
+		color: #01580c;
+	}
+}
+p{
+	padding-left: 10px;
+	font-family: 'Rokkitt', serif;
+	font-size: 30pt;
+}
+.outside{
+	background: url(../images/heading1.jpg) fixed;
+	background-size: 100vw;
+}
+.inside{
+	padding: 400px;
+}
+.coffee{
+	display: flex;
+}
+/*######################## gallery#######################################################*/
+#show{
+	padding-top: 10%;
+	padding-left: 5%;
+}
+.cheesecake{
+	padding-top: 15%;
+}
+.button {
+  font-size: 15pt;
+  padding: 10px;
+  color: #998efc;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.button:hover {
+  background: #ccff00;
+  margin-top: 20px;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  visibility: hidden;
+  opacity: 0;
+}
+.bg:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.inner {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.inner .close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.inner .close:hover {
+  color: green;
+}
+.inner .info {
+  max-height: 30%;
+  overflow: auto;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		nav{
+			word-spacing: 10px;
+			border: solid purple;
+			padding: 10px;
+			display: flex;
+			justify-content: flex-end;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+			border: solid;
+			padding: 10px;
+		}
+		#drop{
+			display: none;
+			flex-direction: column;
+			position: absolute;
+			padding: 10px; 
+		}
+		#events:hover #drop{
+			display: flex;
+			color: blue;
+			background-color: rgba(0,0,0,0.35);
+		}
+	</style>
+</head>
+<body>
+
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#" id="events">Events
+			<div id="drop">
+				<div>Weddings</div>
+				<div>Birthdays</div>
+				<div>Sweet 16's</div>
+			</div>
+		</a>
+		<a href="#">Contact</a>
+	</nav>
+
+</body>
+</html>

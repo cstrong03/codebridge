@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<img class="mySlides" src="pic1.jpeg">
+	<img class="mySlides" src="pic2.jpeg">
+	<img class="mySlides" src="pic3.jpeg">
+	<img class="mySlides" src="pic4.jpeg">
+	<img class="mySlides" src="pic5.jpeg">
+
+
+	<button onclick="plusDivs(-1)">Back</button>
+	<button onclick="plusDivs(1)">Next</button>
+
+
+<script>
+	var slideIndex = 0;
+
+	let showDivs = (n)=> {
+		let x = document.getElementsByClassName("mySlides");
+		if (n > x.length - 1) {
+			slideIndex = 0;
+		}
+		if (n < 0) {
+			slideIndex = x.length - 1;
+		}
+		let i = 0;
+		while(i < x.length){
+		x[i].style.display = "none";
+		i++;
+		}
+	x[slideIndex].style.display ="block";
+	
+	}
+
+	let plusDivs = (n)=> {
+		showDivs(slideIndex += n);
+	}
+
+	showDivs(slideIndex);
+</script>
+<script src="js/while.js"></script>
+</body>
+</html>
